@@ -2,6 +2,7 @@
     margin-top: 3em;
     margin-bottom: 3em;
     color: $text-color-dark;
+    overflow: visible;
     h2 {
         text-align: center;
     }
@@ -32,44 +33,45 @@
     @media (max-width: $container-s) {
         padding-left: 12px;
     }
-}
-
-.card-container {
-    width: 270px;
-    height: 380px;
-    @include display-flex(space-between, none);
-    flex-direction: column;
-    background-color: $color-white;
-    @extend %box-shadow;
-    padding: 2em;
-    margin: 0.5em;
-    border-radius: 20px;
-    h3 {
-        font-weight: 700;
-    }
-    p, h3 {
-        color: $text-color-dark;
-    }
-    .btn-link {
-        color: $primary-color-deep;
-    }
-    &:hover {
-        box-shadow: none;
-        background: linear-gradient(72deg, rgba(51,42,142,1) 0%, rgba(73,65,162,1) 73%);
-        p, h3, .btn-link {
-            color: $color-white;
+    .card-container {
+        overflow: visible;
+        width: 270px;
+        height: 380px;
+        @include display-flex(space-between, none);
+        flex-direction: column;
+        background: $color-white;
+        @extend %box-shadow;
+        padding: 2em;
+        margin: 0.5em;
+        border-radius: 20px;
+        h3 {
+            font-weight: 700;
         }
-    }
-}
-
-.card-img-container {
-    width: 100px;
-    height: 100px;
-    background-color: $color-white;
-    border-radius: 100%;
-    @include display-flex(center, center);
-    img {
-        width: 50%;
+        p, h3 {
+            color: $text-color-dark;
+        }
+        .btn-link {
+            color: $primary-color-deep;
+        }
+        &:hover {
+            box-shadow: none;
+            background: $primary-color;
+            transition: background 0.5s ease;
+            p, h3, .btn-link {
+                color: $color-white;
+                transition: color 0.5s ease;
+            }
+        }
+        .card-img-container {
+            width: 100px;
+            height: 100px;
+            background-color: $color-white;
+            border-radius: 100%;
+            @include display-flex(center, center);
+            img {
+                width: 50%;
+            }
+        }
     }
 }
 
