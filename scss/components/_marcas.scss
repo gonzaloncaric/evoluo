@@ -1,0 +1,8 @@
+.marcas-container {
+    .carousel-cell {
+        margin: 10px;
+        @media (max-width: $container-m) {
+            padding-left: 20px;
+        }
+    }
+}

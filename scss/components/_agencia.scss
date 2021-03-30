@@ -1,0 +1,31 @@
+.agencia-container {
+    @include display-flex(space-between, center);
+    margin-top: 3em;
+    margin-bottom: 3em;
+    @media (max-width: 991px) {
+        flex-direction: column;
+    }
+}
+
+.img-agencia-container {
+    // @include display-flex(center, center);
+    flex-direction: column;
+    img {
+        width: 100%;
+    }
+    padding-bottom: 3em;
+}
+
+.text-agencia-container {
+    flex: 1;
+    padding: 6em;
+    @media (max-width: 991px) {
+        padding: 0px;
+    }
+}
+
+.text-agencia-container button {
+    margin-top: 2em;
+    padding-left: 100px;
+    padding-right: 100px;
+}

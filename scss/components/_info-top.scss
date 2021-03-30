@@ -1,0 +1,39 @@
+.info-nav-container-fixed {
+    background-color: $primary-color-deep;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    width: 100%
+}
+
+.info-nav-container {
+    @include display-flex(flex-start, center);
+    height: 40px;
+    @media (max-width: 991px) {
+        display: none;
+    }
+    img {
+        padding-right: 0.75em;
+        color: $color-white;
+    }
+}
+
+.info-email {
+    @include display-flex(center, center);
+    margin-right: 2em;
+    a {
+        color: $color-white;
+        text-decoration: none;
+    }
+}
+
+.info-whatsapp {
+    @include display-flex(center, center);
+    a {
+        color: $color-white;
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,63 @@
+.inicio-container-bg {
+    background-image: url("../images/bg-1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.inicio-container {
+    @include display-flex(center, none);
+    margin-top: 100px;
+    @media (max-width: 991px) {
+        flex-direction: column;
+        margin-top: 60px;
+    }
+}
+
+.inicio-box-text {
+    @media (max-width: 991px) {
+        width: 80%;
+    }
+
+    @media (max-width: 576px) {
+        width: 100%;
+    }
+
+    h1 {
+        color: $text-color-light;
+        padding-top: 150px;
+        font-weight: 700;
+        @media (max-width: 991px) {
+            padding-top: 90px;
+        }
+        @media (max-width: 576px) {
+            padding-top: 60px;
+        }
+    }
+
+    p {
+        padding-top: 15px;
+        color: $text-color-light;
+        @media (max-width: 991px) {
+            padding-top: 0px;
+        }
+    }
+
+    button {
+        margin-top: 30px;
+        @media (max-width: 991px) {
+            margin-top: 20px;
+        }
+    }
+}
+
+.inicio-img-container {
+    width: 160%;
+    position: relative;
+    top: 100px;
+    @media (max-width: 991px) {
+        width: 100%;
+        top: 30px;
+    }
+}

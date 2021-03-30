@@ -1,0 +1,26 @@
+.trabajos-container {
+    margin-top: 6em;
+    margin-bottom: 6em;
+    h2 {
+        text-align: center;
+    }
+}
+
+.items-trabajo-container {
+    @include display-flex(center, center);
+    flex-wrap: wrap;
+}
+
+.item-trabajo {
+    margin: 0.25em;
+    img {
+        width: 100%;
+    }
+}
+
+.titulo-item {
+    position: relative;
+    top: -50px;
+    left: 30px;
+    font-weight: 600;
+}

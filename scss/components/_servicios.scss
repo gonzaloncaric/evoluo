@@ -1,0 +1,93 @@
+.servicios-container {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    color: $text-color-dark;
+    h2 {
+        text-align: center;
+    }
+    @media (max-width: 991px) {
+        margin-top: 5rem;
+    }
+}
+
+.servicios-line {
+    @include display-flex(center, center);
+}
+
+.servicios-p {
+    @include display-flex(center, center);
+    text-align: center;
+    padding: 1.5em 0;
+}
+
+.cards-container {
+    overflow: visible;
+    p, a {
+        text-decoration: none;
+    }
+    @media (max-width: 1200px) {
+        height: 430px;
+        padding-left: 4rem;
+    }
+    @media (max-width: $container-s) {
+        padding-left: 12px;
+    }
+}
+
+.card-container {
+    width: 270px;
+    height: 380px;
+    @include display-flex(space-between, none);
+    flex-direction: column;
+    background-color: $color-white;
+    @extend %box-shadow;
+    padding: 2em;
+    margin: 0.5em;
+    border-radius: 20px;
+    h3 {
+        font-weight: 700;
+    }
+    p, h3 {
+        color: $text-color-dark;
+    }
+    .btn-link {
+        color: $primary-color-deep;
+    }
+    &:hover {
+        box-shadow: none;
+        background: linear-gradient(72deg, rgba(51,42,142,1) 0%, rgba(73,65,162,1) 73%);
+        p, h3, .btn-link {
+            color: $color-white;
+        }
+    }
+}
+
+.card-img-container {
+    width: 100px;
+    height: 100px;
+    background-color: $color-white;
+    border-radius: 100%;
+    @include display-flex(center, center);
+    img {
+        width: 50%;
+    }
+}
+
+.btns-container {
+    @include display-flex(center, center);
+    a {
+        margin: 2rem;
+    }
+    button {
+        width: 300px;
+    }
+    @media (max-width: 768px) {
+        flex-direction: column;
+        button {
+            width: 300px;
+        }
+        a {
+            margin: 0.5rem;
+        }
+    }
+}

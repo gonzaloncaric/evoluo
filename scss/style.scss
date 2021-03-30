@@ -1,0 +1,83 @@
+/* CONTENIDOS DEL CSS */
+
+/* GENERALES */
+// BASES
+//COMPONENTES
+
+/* GENERALES */
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* BASES */
+// Variables
+@import "base/variables";
+
+// Extends
+@import "base/extends";
+
+// Mixins
+@import "base/mixins";
+
+/* CONTENEDORES */
+@import "mediaQuery/container";
+
+/* FUENTES */
+@import "base/fonts";
+
+
+/*COMPONENTES*/
+/* BOTONES */
+@import "components/botones";
+
+// Scrollbar
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 100px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+    background-color: rgb(255, 255, 255);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #fba70b;
+    border-radius: 100px;
+}
+
+/* Info nav */
+@import "components/info-top";
+
+/* Navbar */
+@import "components/navbar";
+
+/* Inicio */
+@import "components/inicio";
+
+/* Servicios */
+@import "components/servicios";
+
+/* Marcas */
+@import "components/marcas";
+
+/* Agencia */
+@import "components/agencia";
+
+/* Trabajos */
+@import "components/trabajos";
+
+/* Contacto y Testimonios */
+@import "components/contacto";
+
+/* Footer */
+@import "components/footer";

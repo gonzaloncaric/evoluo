@@ -1,0 +1,62 @@
+.btn-yellow {
+    font-family: $font-family;
+    font-size: 16px;
+    font-weight: 700;
+    color: $color-white;
+    background-color: $secondary-color;
+    border: none;
+    padding: 15px 60px;
+    border-radius: 100px;
+    @extend %box-shadow;
+    @extend %mouse-btn;
+    &:hover {
+        box-shadow: none;
+        background-color: $secondary-color;
+        transition: all 0.5s ease;
+    }
+    &:active {
+        box-shadow: none;
+        background-color: $secondary-color;
+    }
+}
+
+.btn-violet {
+    font-family: $font-family;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    background: $gradient;
+    border: none;
+    padding: 15px 60px;
+    border-radius: 100px;
+    @extend %box-shadow;
+    @extend %mouse-btn;
+    &:hover {
+        box-shadow: none;
+        background: linear-gradient(-90deg, rgba(51,42,142,1) 0%, rgba(73,65,162,1) 73%);
+        transition: all 0.5s ease;
+    }
+}
+
+.btn-link {
+    font-family: $font-family;
+    font-size: 16px;
+    font-weight: 700;
+    color: $primary-color-deep;
+    border: none;
+    background-color: transparent;
+    margin-top: 1em;
+    @extend %mouse-btn;
+}
+
+.btn-border {
+    font-family: $font-family;
+    font-size: 16px;
+    font-weight: 700;
+    color: $text-color-dark;
+    background-color: $color-white;
+    border: 3px solid $secondary-color;
+    padding: 15px 30px;
+    border-radius: 100px;
+    @extend %mouse-btn;
+}
