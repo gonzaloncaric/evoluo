@@ -512,19 +512,30 @@ a {
   align-items: center;
   flex-wrap: wrap;
 }
-
-.item-trabajo {
+.items-trabajo-container .item-trabajo {
   margin: 0.25em;
+  width: 420px;
 }
-.item-trabajo img {
+.items-trabajo-container .item-trabajo img {
   width: 100%;
 }
-
-.titulo-item {
+.items-trabajo-container .item-trabajo img:hover {
+  opacity: 50%;
+  transition: all 0.5s ease;
+}
+.items-trabajo-container .item-trabajo:hover {
+  transform: scale(0.95);
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.items-trabajo-container .item-trabajo .titulo-item {
   position: relative;
-  top: -50px;
-  left: 30px;
+  top: -60px;
   font-weight: 600;
+  background-color: #332a8e;
+  width: 70%;
+  padding: 0.75rem;
+  color: #ffffff;
 }
 
 /* Contacto y Testimonios */

@@ -9,18 +9,32 @@
 .items-trabajo-container {
     @include display-flex(center, center);
     flex-wrap: wrap;
-}
-
-.item-trabajo {
-    margin: 0.25em;
-    img {
-        width: 100%;
+    .item-trabajo {
+        margin: 0.25em;
+        width: 420px;
+        img {
+            width: 100%;
+            &:hover {
+                opacity: 50%;
+                transition: all 0.5s ease;
+            }
+        }
+        &:hover {
+            transform: scale(0.95);
+            transition: all 0.5s ease;
+            cursor: pointer;
+        }
+        .titulo-item {
+            position: relative;
+            top: -60px;
+            font-weight: 600;
+            background-color: $primary-color;
+            width: 70%;
+            padding: 0.75rem;
+            color: $text-color-light;
+        }
     }
 }
 
-.titulo-item {
-    position: relative;
-    top: -50px;
-    left: 30px;
-    font-weight: 600;
-}
+
+
